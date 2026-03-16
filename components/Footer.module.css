@@ -1,0 +1,146 @@
+.footer {
+  background: var(--nav-bg);
+  border-top: 1px solid var(--glass-border);
+  padding: 5rem 0 2rem 0;
+  margin-top: 5rem;
+  backdrop-filter: blur(12px);
+}
+
+.topSection {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  gap: 4rem;
+  margin-bottom: 4rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+  max-width: 320px;
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.socialLink {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 50%;
+  color: var(--text-muted);
+  transition: all 0.2s ease;
+}
+
+.socialLink:hover {
+  color: var(--primary);
+  border-color: var(--primary);
+  transform: translateY(-3px);
+  background: rgba(99, 102, 241, 0.1);
+}
+
+.linkColumn h3, .newsletterColumn h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: var(--foreground);
+}
+
+.linkColumn ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.linkColumn ul li a {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.linkColumn ul li a:hover {
+  color: var(--primary);
+}
+
+.newsletterColumn p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.newsletterForm {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.newsletterForm input {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--glass-border);
+  padding: 0.8rem 1rem;
+  border-radius: 0.75rem;
+  color: white;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.newsletterForm input:focus {
+  border-color: var(--primary);
+}
+
+.bottomSection {
+  border-top: 1px solid var(--glass-border);
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.bottomLinks {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.dot {
+  width: 4px;
+  height: 4px;
+  background: var(--success);
+  border-radius: 50%;
+  box-shadow: 0 0 8px var(--success);
+}
+
+@media (max-width: 1024px) {
+  .topSection {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .topSection {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  
+  .bottomSection {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+}

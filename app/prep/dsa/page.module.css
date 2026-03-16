@@ -1,0 +1,78 @@
+.dsaHero {
+  padding-top: 8rem;
+}
+
+.header {
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.subtitle {
+  color: var(--text-muted);
+  margin-top: 1rem;
+}
+
+.topicSection {
+  margin-bottom: 5rem;
+}
+
+.topicTitle {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.problemsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.problemCard {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.probInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.status {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: 1px;
+}
+
+.probInfo h3 {
+  font-size: 1.1rem;
+}
+
+.probMeta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.diffBadge {
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.easy { background: rgba(16, 185, 129, 0.1); color: var(--success); }
+.medium { background: rgba(245, 158, 11, 0.1); color: var(--warning); }
+.hard { background: rgba(239, 68, 68, 0.1); color: var(--error); }
+
+.solveLink {
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
