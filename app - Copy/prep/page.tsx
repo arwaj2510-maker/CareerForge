@@ -1,4 +1,4 @@
-import Navbar from '../../components/Navbar';
+import Navbar from '../../pages/Navbar';
 import styles from './page.module.css';
 
 export default function PrepPage() {

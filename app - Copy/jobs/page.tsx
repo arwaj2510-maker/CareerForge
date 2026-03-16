@@ -1,4 +1,4 @@
-import Navbar from '../../components/Navbar';
+import Navbar from '../../pages/Navbar';
 import styles from './page.module.css';
 
 export default function JobsPage() {
@@ -16,7 +16,7 @@ export default function JobsPage() {
         <div className="container">
           <h1 className="gradient-text">Dream Tech Jobs</h1>
           <p className={styles.subtitle}>Discover open roles at the world's most innovative companies.</p>
-          
+
           <div className={`glass ${styles.searchBar}`}>
             <input type="text" placeholder="Search roles, companies, or skills..." />
             <div className={styles.filters}>

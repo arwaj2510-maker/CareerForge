@@ -1,10 +1,10 @@
-import Navbar from '../../../components/Navbar';
+import Navbar from '../../../pages/Navbar';
 import styles from './page.module.css';
 
 export default function DSASheetPage() {
   const topics = [
-    { 
-      name: "Arrays", 
+    {
+      name: "Arrays",
       problems: [
         { name: "Largest Element", diff: "Easy", link: "#" },
         { name: "Second Largest", diff: "Easy", link: "#" },
@@ -12,16 +12,16 @@ export default function DSASheetPage() {
         { name: "Maximum Subarray", diff: "Medium", link: "#" }
       ]
     },
-    { 
-      name: "Linked List", 
+    {
+      name: "Linked List",
       problems: [
         { name: "Reverse LL", diff: "Easy", link: "#" },
         { name: "Middle of LL", diff: "Easy", link: "#" },
         { name: "Cycle Detection", diff: "Medium", link: "#" }
       ]
     },
-    { 
-      name: "Recursion & Backtracking", 
+    {
+      name: "Recursion & Backtracking",
       problems: [
         { name: "N-Queens", diff: "Hard", link: "#" },
         { name: "Sudoku Solver", diff: "Hard", link: "#" },

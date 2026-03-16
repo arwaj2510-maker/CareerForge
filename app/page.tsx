@@ -1,11 +1,11 @@
-import Navbar from '../components/Navbar';
+import Navbar from '../pages/Navbar';
 import styles from './page.module.css';
 
 export default function Home() {
   return (
     <main>
       <Navbar />
-      
+
       {/* Hero Section */}
       <section className={`${styles.hero} section`}>
         <div className="container">
@@ -16,7 +16,7 @@ export default function Home() {
               <span className="gradient-text">Software Engineering</span>
             </h1>
             <p className={styles.description}>
-              The all-in-one platform for job seekers. Explore thousands of jobs, 
+              The all-in-one platform for job seekers. Explore thousands of jobs,
               master DSA, and crack company interviews with our curated prep resources.
             </p>
             <div className={styles.ctaGroup}>
@@ -24,7 +24,7 @@ export default function Home() {
               <button className="btn btn-glass">Start Prep</button>
             </div>
           </div>
-          
+
           <div className={styles.heroStats}>
             <div className={`glass ${styles.statCard}`}>
               <h3>10k+</h3>
