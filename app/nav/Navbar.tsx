@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import styles from './Navbar.module.css';
-import LoginModal from './LoginModal';
+import LoginModal from '../loginmodal/LoginModal';
 
 export default function Navbar() {
   const [isModalOpen, setIsModalOpen] = useState(false);
