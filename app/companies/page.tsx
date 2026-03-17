@@ -1,4 +1,4 @@
-import Navbar from '../../components/Navbar';
+import Navbar from '@/components/Navbar';
 import styles from './page.module.css';
 
 export default function CompaniesPage() {
@@ -35,7 +35,7 @@ export default function CompaniesPage() {
 
   return (
     <main>
-      <Navbar />
+      {/* <Navbar /> */}
       <section className={`${styles.companyHero} section`}>
         <div className="container">
           <h1 className="gradient-text">Company Hiring Processes</h1>

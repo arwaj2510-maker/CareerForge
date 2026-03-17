@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Footer from "./footer/Footer";
+import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
   title: "CareerForge | Job Portal & Preparation Hub",
@@ -15,6 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <Navbar />
         <div className="mesh-bg" />
         {children}
         <Footer />

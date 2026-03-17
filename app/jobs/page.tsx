@@ -1,4 +1,4 @@
-import Navbar from '../../components/Navbar';
+import Navbar from '@/components/Navbar';
 import styles from './page.module.css';
 
 export default function JobsPage() {
@@ -11,7 +11,7 @@ export default function JobsPage() {
 
   return (
     <main>
-      <Navbar />
+      {/* <Navbar /> */}
       <section className={`${styles.jobsHero} section`}>
         <div className="container">
           <h1 className="gradient-text">Dream Tech Jobs</h1>

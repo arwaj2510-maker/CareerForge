@@ -4,7 +4,7 @@
   height: 500px;
   overflow: hidden;
   border-radius: 1.5rem;
-  margin: 4rem 0;
+  margin: 4.65rem 0;
   border: 1px solid var(--glass-border);
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
 }
@@ -79,8 +79,13 @@
   transform: translateY(-50%) scale(1.1);
 }
 
-.prev { left: 2rem; }
-.next { right: 2rem; }
+.prev {
+  left: 2rem;
+}
+
+.next {
+  right: 2rem;
+}
 
 .indicators {
   position: absolute;
@@ -111,12 +116,15 @@
   .carouselContainer {
     height: 400px;
   }
+
   .content h2 {
     font-size: 1.8rem;
   }
+
   .overlay {
     padding: 2rem;
   }
+
   .navBtn {
     display: none;
   }

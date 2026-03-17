@@ -1,6 +1,4 @@
-"use client"
-
-import Navbar from '../nav/Navbar';
+import Navbar from '@/components/Navbar';
 import styles from './page.module.css';
 
 export default function PrepPage() {
@@ -13,7 +11,7 @@ export default function PrepPage() {
 
   return (
     <main>
-      <Navbar />
+      {/* <Navbar /> */}
       <section className={`${styles.prepHero} section`}>
         <div className="container">
           <h1 className="gradient-text">Preparation Hub</h1>
