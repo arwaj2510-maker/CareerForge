@@ -1,10 +1,15 @@
 import Navbar from '../components/Navbar';
+import Carousel from '../components/Carousel';
 import styles from './page.module.css';
 
 export default function Home() {
   return (
     <main>
       <Navbar />
+      
+      <div className="container">
+        <Carousel />
+      </div>
 
       {/* Hero Section */}
       <section className={`${styles.hero} section`}>
