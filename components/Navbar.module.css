@@ -56,8 +56,72 @@
   gap: 1rem;
 }
 
+.menuBtn {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: color 0.2s ease;
+}
+
+.menuBtn:hover {
+  color: var(--foreground);
+}
+
+.mobileActions {
+  display: none;
+}
+
 @media (max-width: 768px) {
-  .navLinks, .actions {
-    display: none;
+  .menuBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .actions .btn {
+    display: none; /* Hide desktop login button in mobile view */
+  }
+
+  .navLinks {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    height: 100vh;
+    background: rgba(10, 10, 12, 0.98);
+    backdrop-filter: blur(20px);
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 999;
+    border-left: 1px solid var(--glass-border);
+    padding: 2rem;
+  }
+
+  .navLinksActive {
+    right: 0;
+  }
+
+  .navLinks a {
+    font-size: 1.25rem;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  .mobileActions {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .mobileActions button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
   }
 }
