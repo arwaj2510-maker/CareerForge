@@ -1,3 +1,5 @@
+"use client"
+
 import Navbar from '../nav/Navbar';
 import styles from './page.module.css';
 
