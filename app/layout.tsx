@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Footer from "@/pages/Footer";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "CareerForge | Job Portal & Preparation Hub",
